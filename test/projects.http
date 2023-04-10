@@ -1,0 +1,46 @@
+@url = http://localhost:4004/projects
+
+### 
+POST {{url}}/Projects
+Content-Type: application/json
+
+{
+    "name": "Efforts to Invoice 3",
+    "description": "Capture Efforts and transform them into Invoice",
+    "startDate": "2023-03-02",
+    "endDate": "2023-03-21",
+    "customer_ID": "c3dddbc0-d831-43b5-afce-70d241655983"
+}
+
+###
+PUT {{url}}/Projects(d02195ee-39e1-4245-9705-2b7c83ee4349)
+Content-Type: application/json
+
+{
+    "description":  "Capture Efforts and transform them into Invoice",
+    "startDate": "2023-03-02",
+    "endDate": "2023-05-30"
+}
+
+### 
+PATCH  {{url}}/Projects(d02195ee-39e1-4245-9705-2b7c83ee4349)
+Content-Type: application/json
+
+{
+    "endDate": "2024-01-01"
+}
+
+### 
+
+GET {{url}}/Projects 
+
+### 
+GET {{url}}/Projects(d02195ee-39e1-4245-9705-2b7c83ee4349)
+
+### 
+POST {{url}}/Customer 
+Content-Type: application/json
+
+{
+    "name": "Devforce Technologies"
+}
